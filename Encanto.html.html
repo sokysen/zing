@@ -1,36 +1,59 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    </head>
-  <body>
-    <div class='video' style='width:100%, height:100%'>
-    <script src="https://use.fontawesome.com/20603b964f.js"></script>
+<head></head>
+<body>
+<div class='video'>
+  <script src="https://use.fontawesome.com/20603b964f.js"></script>
   <script type="text/javascript" src="https://content.jwplatform.com/libraries/LJ361JYj.js"></script>
-      <script type="text/javascript">jwplayer.key = 'ypdL3Acgwp4Uh2/LDE9dYh3W/EPwDMuA2yid4ytssfI=';</script><div id="myElement"></div><script type="text/javascript">
-                jwplayer("myElement").setup({
-                  image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1oOD7oMtS2PcWvFfPkxkhIZQWwnUQ8FjMRUIbBXt1Q0-jvgK-OR-enzbh0gzG9D1gpJgO9WHXRx_Jto8L_BUAbmxTdg_os55cD8y3meEkSnC9QwAXfwdk4kCArwMf1_U4jd5QzvV7JWTqVaTqmut4SsivzWHu9VfdaWOsM1r3X5EAJCnwuNE_k0rqqA/s1600/photo_2023-01-10_12-01-26.jpg",
-                    aspectratio: "16:9",
-                  width: '100%',
-                  aspectratio: '16:9',
-                    autostart: false,
-          file : 'https://hls03.bigfiles.org/hls2/02/00005/a0kbrml82xpd_h/index-v1-a1.m3u8?t=WdMf2CxO0uiAPxzKS5bcshEel3xGnswUMwlFdyaIXuw&s=1673360062&e=180&f=27509&srv=127.0.0.1',
-                            
-          title: 'MOV2.ME',
-        description: 'Wellcome to mov2.ME',
-        aboutlink: 'https://www.mov2.me/',
-        tracks:[{"file":"https://firebasestorage.googleapis.com/v0/b/phumimovie-eb3a6.appspot.com/o/Emancipation%2FKm.srt?alt=media&token=09f3ee56-6d02-40be-bbc8-1a501a5c25e1",
-        "label":"Khmer","kind":"captions","default":"true"},
-        
-        {"file":"https://firebasestorage.googleapis.com/v0/b/phumimovie-eb3a6.appspot.com/o/Emancipation%2FEn.srt?alt=media&token=461feb0d-1169-4856-9365-f5f4c41d0a7a",
-        "label":"English","kind":"captions",}],
-        captions: {color: '#ffb800',fontSize: 30,backgroundOpacity: 0},
-          sharing: {
-            sites: ['facebook','twitter','tumblr','googleplus',{icon: '//support-static.jwplayer.com/images/awesome.svg', src: 'http://www.jwplayer.com/?', label:'jwplayer'}],
-            code: encodeURI("<iframe src='<?php echo $sharing;?>' width='480' height='320'></iframe>"),
-            link: "<?php echo $sharing;?>"
-              }
-                  })
-            </script>
-    </div>
-    </body>
-  </html>
+  <script type="text/javascript">
+    jwplayer.key = 'ypdL3Acgwp4Uh2/LDE9dYh3W/EPwDMuA2yid4ytssfI=';
+  </script>
+  <div id="myElement"></div>
+  <script type="text/javascript">
+    jwplayer("myElement").setup({
+      image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1oOD7oMtS2PcWvFfPkxkhIZQWwnUQ8FjMRUIbBXt1Q0-jvgK-OR-enzbh0gzG9D1gpJgO9WHXRx_Jto8L_BUAbmxTdg_os55cD8y3meEkSnC9QwAXfwdk4kCArwMf1_U4jd5QzvV7JWTqVaTqmut4SsivzWHu9VfdaWOsM1r3X5EAJCnwuNE_k0rqqA/s1600/photo_2023-01-10_12-01-26.jpg",
+      height: window.innerHeight,
+      autostart: false,
+      file : 'https://hls03.bigfiles.org/hls2/02/00005/a0kbrml82xpd_h/index-v1-a1.m3u8?t=WdMf2CxO0uiAPxzKS5bcshEel3xGnswUMwlFdyaIXuw&s=1673360062&e=180&f=27509&srv=127.0.0.1',
+      title: 'MOV2.ME',
+      description: 'Wellcome to mov2.ME',
+      aboutlink: 'https://www.mov2.me/',
+      tracks:[{"file":"https://firebasestorage.googleapis.com/v0/b/phumimovie-eb3a6.appspot.com/o/Emancipation%2FKm.srt?alt=media&token=09f3ee56-6d02-40be-bbc8-1a501a5c25e1",
+        "label":"Khmer","kind":"captions","default":"true"}],
+      captions: {color: '#ffb800',fontSize: 30,backgroundOpacity: 0},
+      sharing: {
+        sites: ['facebook','twitter','tumblr','googleplus',{icon: '//support-static.jwplayer.com/images/awesome.svg', src: 'http://www.jwplayer.com/?', label:'jwplayer'}],
+        code: encodeURI("<iframe src='<?php echo $sharing;?>' width='480' height='320'></iframe>"),
+        link: "<?php echo $sharing;?>"
+      }
+    })
+  </script>
+</div>
+<style>
+  html,
+body,
+#container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+}
+#myElement {
+    height: 100vh !important;
+}
+body {
+    height: 100vh;
+}
+#container {
+    position: absolute;
+    text-align: center
+}
+
+video {
+    outline: 0
+}
+</style>
+</body>
+</html>
